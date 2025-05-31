@@ -1,5 +1,7 @@
 # Portfolio - Ankit Kumar
 
+![Portfolio Preview](portfolio-preview.png)
+
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
 ## Features
