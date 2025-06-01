@@ -211,11 +211,11 @@ const About = () => {
           </h2>
           
           <div className="relative">
-            <div className="absolute left-2 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-600 via-pink-600 to-orange-600"></div>
+            <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-600 via-pink-600 to-orange-600"></div>
             
             <div className="space-y-4 sm:space-y-6">
               <div className="relative ml-8 sm:ml-12">
-                <div className="absolute -left-6 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
+                <div className="absolute -left-5 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
                 <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg sm:rounded-xl p-4 sm:p-6 border border-purple-200/50 dark:border-purple-800/30">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2 sm:mb-3">
                     <h3 className="text-lg sm:text-xl font-bold text-purple-800 dark:text-purple-300">B.Tech in Electrical Engineering</h3>
@@ -242,7 +242,7 @@ const About = () => {
               </div>
               
               <div className="relative ml-8 sm:ml-12">
-                <div className="absolute -left-6 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-pink-600 to-red-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
+                <div className="absolute -left-5 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-pink-600 to-red-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
                 <div className="bg-gradient-to-r from-pink-50 to-red-50 dark:from-pink-950/30 dark:to-red-950/30 rounded-lg sm:rounded-xl p-4 sm:p-6 border border-pink-200/50 dark:border-pink-800/30">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2 sm:mb-3">
                     <h3 className="text-lg sm:text-xl font-bold text-pink-800 dark:text-pink-300">12th Grade (Science)</h3>
@@ -259,7 +259,7 @@ const About = () => {
               </div>
               
               <div className="relative ml-8 sm:ml-12">
-                <div className="absolute -left-6 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-orange-600 to-yellow-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
+                <div className="absolute -left-5 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-orange-600 to-yellow-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
                 <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-950/30 dark:to-yellow-950/30 rounded-lg sm:rounded-xl p-4 sm:p-6 border border-orange-200/50 dark:border-orange-800/30">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2 sm:mb-3">
                     <h3 className="text-lg sm:text-xl font-bold text-orange-800 dark:text-orange-300">10th Grade (Science)</h3>

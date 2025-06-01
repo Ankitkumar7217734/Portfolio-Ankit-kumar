@@ -17,21 +17,9 @@ export function MobileMenu() {
     { 
       name: "Contact", 
       path: "/contact", 
-      icon: null, 
+      icon: MessageCircle, 
       color: "text-pink-500",
-      logoComponent: () => (
-        <div className="relative flex items-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-sm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative bg-gradient-to-r from-purple-500 to-pink-500 p-1 rounded-full group-hover:from-purple-600 group-hover:to-pink-600 transition-all duration-300 shadow-sm">
-              <MessageCircle className="h-3 w-3 text-white" />
-            </div>
-          </div>
-          <span className="absolute top-full left-0 mt-1 text-xs font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
-            Let's Talk
-          </span>
-        </div>
-      )
+      logoComponent: null
     },
   ];
 
@@ -48,7 +36,7 @@ export function MobileMenu() {
         </Button>
       </SheetTrigger>
       
-      <SheetContent side="left" className="w-72 bg-background/95 backdrop-blur-xl border-r border-border/40">
+      <SheetContent side="right" className="w-72 bg-background/95 backdrop-blur-xl border-l border-border/40">
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 pointer-events-none"></div>
         
@@ -75,18 +63,13 @@ export function MobileMenu() {
               className={cn(
                 "group relative flex items-center gap-4 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 nav-item-enhanced",
                 "hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-950/30 dark:hover:to-purple-950/30",
-                "hover:scale-105 hover:translate-x-2 hover:shadow-sm",
+                "hover:scale-105 hover:-translate-x-2 hover:shadow-sm",
                 location.pathname === item.path 
-                  ? "bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-600 dark:text-blue-400 shadow-sm scale-105 translate-x-2" 
+                  ? "bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-600 dark:text-blue-400 shadow-sm scale-105 -translate-x-2" 
                   : "text-foreground/70 hover:text-foreground"
               )}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Custom Logo Component for Contact - positioned before icon and text */}
-              {item.logoComponent && (
-                <item.logoComponent />
-              )}
-              
               {/* Icon */}
               {item.icon && (
                 <div className={cn(
@@ -114,7 +97,7 @@ export function MobileMenu() {
         </nav>
         
         {/* Footer in mobile menu */}
-        <div className="absolute bottom-6 left-6 right-6">
+        <div className="absolute bottom-6 right-6 left-6">
           <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
             <span>Built with</span>
             <span className="text-red-500 animate-pulse">♥</span>

@@ -47,15 +47,15 @@ export function Layout() {
     <div className="flex min-h-screen flex-col antialiased transition-colors duration-300">
       {/* Enhanced Navigation Header */}
       <header className={cn(
-        "sticky top-0 z-50 border-b border-border/40 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 transition-all duration-300",
+        "sticky top-0 z-50 border-b border-border/30 backdrop-blur-xl supports-[backdrop-filter]:bg-background/30 transition-all duration-300",
         isScrolled 
-          ? "bg-background/90 shadow-lg shadow-black/5 border-border/60" 
-          : "bg-background/80 border-border/40"
+          ? "bg-background/50 shadow-lg shadow-black/5 border-border/40" 
+          : "bg-background/20 border-border/20"
       )}>
         {/* Dynamic gradient overlay */}
         <div className={cn(
-          "absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 pointer-events-none transition-opacity duration-300",
-          isScrolled ? "opacity-100" : "opacity-50"
+          "absolute inset-0 bg-gradient-to-r from-blue-500/3 via-purple-500/3 to-pink-500/3 pointer-events-none transition-opacity duration-300",
+          isScrolled ? "opacity-100" : "opacity-30"
         )}></div>
         
         <div className="container relative">
