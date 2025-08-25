@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Global CSS Variables and Theme Configuration
+ * Updated to use professional blue tech theme for better visual appeal
+ * Provides consistent color palette across light and dark modes
+ */
 @layer base {
   :root {
     /* Blue Tech Theme - Light Mode */
