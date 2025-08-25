@@ -89,12 +89,12 @@ const Projects = () => {
     : projectsData;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50/50 via-yellow-50/30 to-blue-50/50 dark:from-slate-900/90 dark:via-emerald-950/30 dark:to-blue-950/40 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-blue-100/30 to-blue-200/50 dark:from-slate-900/90 dark:via-blue-950/30 dark:to-blue-800/40 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-400/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse electrical-component"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-blue-400/20 to-emerald-400/20 rounded-full blur-3xl animate-pulse delay-1000 electrical-component"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-yellow-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500 electrical-wire"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-full blur-3xl animate-pulse electrical-component"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-blue-500/20 to-blue-700/20 rounded-full blur-3xl animate-pulse delay-1000 electrical-component"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-400/10 to-blue-500/10 rounded-full blur-3xl animate-pulse delay-500 electrical-wire"></div>
         {/* Circuit trace effects */}
         <div className="absolute top-10 left-10 w-32 h-1 bg-gradient-to-r from-emerald-500/30 to-transparent circuit-trace"></div>
         <div className="absolute bottom-20 right-20 w-24 h-1 bg-gradient-to-l from-yellow-500/30 to-transparent circuit-trace" style={{animationDelay: '1s'}}></div>
@@ -130,12 +130,12 @@ const Projects = () => {
         
         {/* Filter Section */}
         <div className="relative mb-8 sm:mb-12">
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl p-4 sm:p-6 border border-white/30 dark:border-emerald-700/30 shadow-xl electrical-component">
+          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl p-4 sm:p-6 border border-white/30 dark:border-blue-700/30 shadow-xl electrical-component">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-6 bg-gradient-to-r from-emerald-500 to-yellow-500 rounded-lg flex items-center justify-center electrical-component">
+              <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center electrical-component">
                 <Filter className="h-4 w-4 text-white" />
               </div>
-              <h2 className="text-lg font-semibold text-emerald-800 dark:text-emerald-200">Filter Projects</h2>
+              <h2 className="text-lg font-semibold text-blue-800 dark:text-blue-200">Filter Projects</h2>
             </div>
             <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               <Button 
@@ -145,8 +145,8 @@ const Projects = () => {
                 className={cn(
                   "rounded-full transition-all duration-300 hover:scale-105",
                   filter === null 
-                    ? "bg-gradient-to-r from-emerald-600 to-yellow-600 hover:from-emerald-700 hover:to-yellow-700 shadow-lg current-flow" 
-                    : "hover:bg-emerald-50 dark:hover:bg-emerald-950/50 hover:border-emerald-300 dark:hover:border-emerald-700"
+                    ? "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg current-flow" 
+                    : "hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:border-blue-300 dark:hover:border-blue-700"
                 )}
               >
                 All Projects
@@ -160,8 +160,8 @@ const Projects = () => {
                   className={cn(
                     "rounded-full transition-all duration-300 hover:scale-105",
                     filter === tag 
-                      ? "bg-gradient-to-r from-emerald-600 to-yellow-600 hover:from-emerald-700 hover:to-yellow-700 shadow-lg current-flow" 
-                      : "hover:bg-emerald-50 dark:hover:bg-emerald-950/50 hover:border-emerald-300 dark:hover:border-emerald-700"
+                      ? "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg current-flow" 
+                      : "hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:border-blue-300 dark:hover:border-blue-700"
                   )}
                 >
                   {tag}
@@ -217,8 +217,8 @@ const Projects = () => {
                       className={cn(
                         "project-tag-compact transition-all duration-300 hover:scale-105 text-xs",
                         filter === tag 
-                          ? "bg-gradient-to-r from-emerald-600 to-yellow-600 text-white shadow-md current-flow" 
-                          : "hover:bg-emerald-200/80 dark:hover:bg-emerald-900/50"
+                          ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md current-flow" 
+                          : "hover:bg-blue-200/80 dark:hover:bg-blue-900/50"
                       )}
                       style={{ animationDelay: `${index * 80 + tagIndex * 40}ms` }}
                     >

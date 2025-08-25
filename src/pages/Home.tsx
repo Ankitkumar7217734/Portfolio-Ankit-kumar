@@ -130,7 +130,7 @@ const Home = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Circuit board pattern with flowing current */}
           <div
-            className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-emerald-400/10 to-blue-600/10 rounded-full blur-3xl opacity-0 animate-fade-in"
+            className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-blue-400/10 to-blue-600/10 rounded-full blur-3xl opacity-0 animate-fade-in"
             style={{
               animationDuration: "2s",
               animationDelay: "100ms",
@@ -138,7 +138,7 @@ const Home = () => {
             }}
           ></div>
           <div
-            className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-yellow-400/10 to-orange-600/10 rounded-full blur-3xl opacity-0 animate-fade-in"
+            className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-blue-600/10 rounded-full blur-3xl opacity-0 animate-fade-in"
             style={{
               animationDuration: "2s",
               animationDelay: "300ms",
@@ -156,7 +156,7 @@ const Home = () => {
 
           {/* Circuit trace lines */}
           <div
-            className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-br from-emerald-400/5 to-green-500/5 rounded-lg blur-2xl animate-float opacity-0 animate-fade-in"
+            className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-br from-blue-400/5 to-blue-500/5 rounded-lg blur-2xl animate-float opacity-0 animate-fade-in"
             style={{
               animationDuration: "2s",
               animationDelay: "700ms",
@@ -164,7 +164,7 @@ const Home = () => {
             }}
           ></div>
           <div
-            className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-br from-yellow-400/5 to-amber-500/5 rounded-lg blur-2xl animate-float opacity-0 animate-fade-in"
+            className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-br from-blue-400/5 to-blue-500/5 rounded-lg blur-2xl animate-float opacity-0 animate-fade-in"
             style={{
               animationDuration: "2s",
               animationDelay: "900ms",
@@ -174,16 +174,16 @@ const Home = () => {
 
           {/* Animated current flow lines */}
           <div
-            className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-emerald-500/30 to-transparent opacity-0 animate-fade-in electrical-wire"
+            className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-blue-500/30 to-transparent opacity-0 animate-fade-in electrical-wire"
             style={{
               animationDuration: "2s",
               animationDelay: "1100ms",
               animationFillMode: "forwards",
             }}
           >
-            <div className="absolute top-0 w-2 h-2 bg-emerald-500 rounded-full animate-current-flow-vertical"></div>
+            <div className="absolute top-0 w-2 h-2 bg-blue-500 rounded-full animate-current-flow-vertical"></div>
             <div
-              className="absolute top-1/4 w-1 h-1 bg-yellow-400 rounded-full animate-current-flow-vertical"
+              className="absolute top-1/4 w-1 h-1 bg-blue-400 rounded-full animate-current-flow-vertical"
               style={{ animationDelay: "0.5s" }}
             ></div>
             <div
@@ -196,16 +196,16 @@ const Home = () => {
             ></div>
           </div>
           <div
-            className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent opacity-0 animate-fade-in electrical-wire"
+            className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent opacity-0 animate-fade-in electrical-wire"
             style={{
               animationDuration: "2s",
               animationDelay: "1300ms",
               animationFillMode: "forwards",
             }}
           >
-            <div className="absolute left-0 w-2 h-2 bg-yellow-500 rounded-full animate-current-flow"></div>
+            <div className="absolute left-0 w-2 h-2 bg-blue-500 rounded-full animate-current-flow"></div>
             <div
-              className="absolute left-1/4 w-1 h-1 bg-emerald-400 rounded-full animate-current-flow"
+              className="absolute left-1/4 w-1 h-1 bg-blue-400 rounded-full animate-current-flow"
               style={{ animationDelay: "0.3s" }}
             ></div>
             <div
@@ -220,11 +220,11 @@ const Home = () => {
 
           {/* Additional circuit elements */}
           <div
-            className="absolute top-1/4 right-1/3 w-4 h-4 border-2 border-emerald-400/50 rounded-full opacity-0 animate-fade-in electrical-component"
+            className="absolute top-1/4 right-1/3 w-4 h-4 border-2 border-blue-400/50 rounded-full opacity-0 animate-fade-in electrical-component"
             style={{ animationDelay: "1.5s" }}
           ></div>
           <div
-            className="absolute bottom-1/4 left-1/3 w-6 h-6 border-2 border-yellow-400/50 rounded-sm opacity-0 animate-fade-in electrical-component"
+            className="absolute bottom-1/4 left-1/3 w-6 h-6 border-2 border-blue-400/50 rounded-sm opacity-0 animate-fade-in electrical-component"
             style={{ animationDelay: "1.7s" }}
           ></div>
           <div
@@ -314,10 +314,10 @@ const Home = () => {
                     {/* Circuit glow effect */}
                     <div
                       className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${
-                        skill.color === "text-emerald-500"
-                          ? "from-emerald-500/20"
-                          : skill.color === "text-yellow-500"
-                          ? "from-yellow-500/20"
+                        skill.color === "text-blue-500"
+                          ? "from-blue-500/20"
+                          : skill.color === "text-blue-500"
+                          ? "from-blue-500/20"
                           : "from-blue-500/20"
                       } to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                     ></div>
@@ -452,7 +452,7 @@ const Home = () => {
                 </AspectRatio>
 
                 {/* Enhanced overlay with gradient and effects */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 via-emerald-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 via-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-4">
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     {" "}
                     <div className="flex items-center gap-2 text-white/90 text-sm font-medium">

@@ -42,8 +42,8 @@ export function Layout() {
       logoComponent: () => (
         <div className="relative flex items-center">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-700 rounded-full blur-sm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative bg-gradient-to-r from-gray-500 to-gray-700 p-1 rounded-full group-hover:from-gray-600 group-hover:to-gray-800 transition-all duration-300 shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full blur-sm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative bg-gradient-to-r from-blue-500 to-blue-700 p-1 rounded-full group-hover:from-blue-600 group-hover:to-blue-800 transition-all duration-300 shadow-sm">
               <MessageCircle className="h-3 w-3 text-white" />
             </div>
           </div>
@@ -66,7 +66,7 @@ export function Layout() {
         {/* Dynamic gradient overlay */}
         <div
           className={cn(
-            "absolute inset-0 bg-gradient-to-r from-gray-500/3 via-gray-600/3 to-gray-700/3 pointer-events-none transition-opacity duration-300",
+            "absolute inset-0 bg-gradient-to-r from-blue-500/3 via-blue-600/3 to-blue-700/3 pointer-events-none transition-opacity duration-300",
             isScrolled ? "opacity-100" : "opacity-30"
           )}
         ></div>
@@ -93,7 +93,7 @@ export function Layout() {
                 </span>
 
                 {/* Sparkle Effect on Hover */}
-                <Sparkles className="h-4 w-4 text-gray-600 opacity-0 group-hover:opacity-100 group-hover:rotate-12 transition-all duration-300" />
+                <Sparkles className="h-4 w-4 text-blue-600 opacity-0 group-hover:opacity-100 group-hover:rotate-12 transition-all duration-300" />
               </Link>
 
               {/* Enhanced Desktop Navigation */}
@@ -104,11 +104,11 @@ export function Layout() {
                     to={item.path}
                     className={cn(
                       "relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group nav-item-enhanced",
-                      "hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 dark:hover:from-gray-900/50 dark:hover:to-gray-800/50",
-                      "hover:text-gray-600 dark:hover:text-gray-400",
+                      "hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 dark:hover:from-blue-900/50 dark:hover:to-blue-800/50",
+                      "hover:text-blue-600 dark:hover:text-blue-400",
                       "hover:scale-105 hover:shadow-sm",
                       location.pathname === item.path
-                        ? "bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800/30 dark:to-gray-700/30 text-gray-600 dark:text-gray-400 shadow-sm"
+                        ? "bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-800/30 dark:to-blue-700/30 text-blue-600 dark:text-blue-400 shadow-sm"
                         : "text-muted-foreground"
                     )}
                     style={{ animationDelay: `${index * 100}ms` }}
@@ -167,7 +167,7 @@ export function Layout() {
             </p>
             <div className="flex items-center gap-1 text-xs text-muted-foreground">
               <span>Built with</span>
-              <span className="text-gray-600 animate-pulse">♥</span>
+              <span className="text-blue-600 animate-pulse">♥</span>
               <span>and React</span>
             </div>
           </div>

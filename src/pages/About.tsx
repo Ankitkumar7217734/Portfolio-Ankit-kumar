@@ -17,17 +17,17 @@ const About = () => {
   };
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50/50 via-yellow-50/30 to-blue-50/50 dark:from-emerald-950/20 dark:via-yellow-950/10 dark:to-blue-950/20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-blue-100/30 to-blue-200/50 dark:from-blue-950/20 dark:via-blue-900/10 dark:to-blue-800/20">
       <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6 py-8 sm:py-12">
         {/* Hero Section */}
         <div className="relative mb-12 sm:mb-16">
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/10 via-yellow-600/10 to-blue-600/10 rounded-2xl sm:rounded-3xl blur-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-blue-600/10 to-blue-700/10 rounded-2xl sm:rounded-3xl blur-3xl"></div>
           <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-white/20 shadow-2xl electrical-component">
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
               {/* Profile Image */}
               <div className="flex justify-center md:justify-start order-1 md:order-1">
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-yellow-600 to-blue-600 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                   <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-white/50 shadow-xl group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="/profile.png" 
@@ -41,7 +41,7 @@ const About = () => {
               {/* Profile Info */}
               <div className="text-center md:text-left space-y-4 sm:space-y-6 order-2 md:order-2">
                 <div>
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold bg-gradient-to-r from-emerald-600 via-yellow-600 to-blue-600 bg-clip-text text-transparent mb-2 leading-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent mb-2 leading-tight">
                     Ankit Kumar
                   </h1>
                   <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 font-medium">
@@ -55,11 +55,11 @@ const About = () => {
                 {/* Contact Info */}
                 <div className="space-y-2 sm:space-y-3">
                   <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start text-sm sm:text-base">
-                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600 flex-shrink-0" />
                     <span className="text-gray-600 dark:text-gray-300">New Delhi, India - 110044</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start text-sm sm:text-base">
-                    <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-600 flex-shrink-0" />
+                    <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600 flex-shrink-0" />
                     <span className="text-gray-600 dark:text-gray-300">+91 7217734805</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start text-sm sm:text-base">
@@ -74,12 +74,12 @@ const About = () => {
                     href="/Resume.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="group bg-gradient-to-r from-emerald-600 to-yellow-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
+                    className="group bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
                   >
                     <Download className="h-4 w-4 group-hover:animate-bounce" />
                     Download Resume
                   </a>
-                  <button className="group border-2 border-gradient-to-r from-emerald-600 to-yellow-600 text-emerald-600 dark:text-yellow-400 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-yellow-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base">
+                  <button className="group border-2 border-gradient-to-r from-blue-500 to-blue-600 text-blue-600 dark:text-blue-400 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base">
                     <ExternalLink className="h-4 w-4 group-hover:rotate-45 transition-transform duration-300" />
                     Portfolio
                   </button>
@@ -94,7 +94,7 @@ const About = () => {
           <div className="lg:col-span-2">
             <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 border border-white/20 shadow-xl electrical-component">
               <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-emerald-600 to-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                   <Users className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
                 About Me
@@ -120,16 +120,16 @@ const About = () => {
           
           {/* Quick Stats */}
           <div className="space-y-4 sm:space-y-6">
-            <div className="bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-950/30 dark:to-blue-950/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-emerald-200/50 dark:border-emerald-800/50">
-              <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4 text-emerald-800 dark:text-emerald-300">Quick Stats</h3>
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-blue-200/50 dark:border-blue-800/50">
+              <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4 text-blue-800 dark:text-blue-300">Quick Stats</h3>
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex justify-between text-sm sm:text-base">
                   <span className="text-gray-600 dark:text-gray-400">Projects Completed</span>
-                  <span className="font-bold text-emerald-600">15+</span>
+                  <span className="font-bold text-blue-600">15+</span>
                 </div>
                 <div className="flex justify-between text-sm sm:text-base">
                   <span className="text-gray-600 dark:text-gray-400">Years Experience</span>
-                  <span className="font-bold text-yellow-600">2+</span>
+                  <span className="font-bold text-blue-600">2+</span>
                 </div>
                 <div className="flex justify-between text-sm sm:text-base">
                   <span className="text-gray-600 dark:text-gray-400">Technologies</span>
@@ -142,15 +142,15 @@ const About = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-yellow-50 to-blue-50 dark:from-yellow-950/30 dark:to-blue-950/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-yellow-200/50 dark:border-yellow-800/50">
-              <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4 text-yellow-800 dark:text-yellow-300">Currently</h3>
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-blue-200/50 dark:border-blue-800/50">
+              <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4 text-blue-800 dark:text-blue-300">Currently</h3>
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
-                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-emerald-500 rounded-full animate-pulse flex-shrink-0"></div>
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full animate-pulse flex-shrink-0"></div>
                   <span className="text-gray-600 dark:text-gray-400">Available for projects</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
-                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-yellow-500 rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full flex-shrink-0"></div>
                   <span className="text-gray-600 dark:text-gray-400">Learning IoT Systems</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
@@ -164,17 +164,17 @@ const About = () => {
         {/* Experience Section */}
         <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 border border-white/20 shadow-xl mb-6 sm:mb-8 electrical-component">
           <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-emerald-600 to-yellow-600 rounded-lg flex items-center justify-center">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
               <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
             </div>
             Experience
           </h2>
           
           <div className="relative">
-            <div className="absolute left-2 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-600 to-yellow-600"></div>
+            <div className="absolute left-2 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-blue-600"></div>
             
             <div className="relative ml-8 sm:ml-12 pb-6 sm:pb-8">
-              <div className="absolute -left-6 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-emerald-600 to-yellow-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
+              <div className="absolute -left-6 sm:-left-10 top-2 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full border-2 sm:border-4 border-white dark:border-gray-900"></div>
               <div className="bg-gradient-to-r from-emerald-50 to-yellow-50 dark:from-emerald-950/30 dark:to-yellow-950/30 rounded-lg sm:rounded-xl p-4 sm:p-6 border border-emerald-200/50 dark:border-emerald-800/30">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2 sm:mb-3">
                   <h3 className="text-lg sm:text-xl font-bold text-emerald-800 dark:text-emerald-300">Electrical Engineering Specialist</h3>

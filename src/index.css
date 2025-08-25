@@ -6,89 +6,85 @@
 
 @layer base {
   :root {
-    /* Gray Color Palette - Light Mode */
-    --background: 0 0% 98%; /* #F8F9FA */
-    --foreground: 210 6% 16%; /* #212529 */
+    /* Blue Tech Theme - Light Mode */
+    --background: 0 0% 100%; /* White */
+    --foreground: 210 40% 8%; /* Dark blue-gray */
 
-    --card: 0 0% 98%; /* #F8F9FA */
-    --card-foreground: 210 6% 16%; /* #212529 */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 40% 8%; /* Dark blue-gray */
 
-    --popover: 0 0% 98%; /* #F8F9FA */
-    --popover-foreground: 210 6% 16%; /* #212529 */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 40% 8%; /* Dark blue-gray */
 
-    --primary: 210 6% 33%; /* #495057 */
-    --primary-foreground: 0 0% 98%; /* #F8F9FA */
+    --primary: 217 91% 60%; /* Bright blue #3b82f6 */
+    --primary-foreground: 0 0% 98%; /* White */
 
-    --secondary: 210 6% 88%; /* #DEE2E6 */
-    --secondary-foreground: 210 6% 16%; /* #212529 */
+    --secondary: 214 32% 91%; /* Light blue-gray */
+    --secondary-foreground: 210 40% 8%; /* Dark blue-gray */
 
-    --muted: 210 9% 91%; /* #E9ECEF */
-    --muted-foreground: 210 4% 42%; /* #6C757D */
+    --muted: 214 32% 91%; /* Light blue-gray */
+    --muted-foreground: 215 16% 47%; /* Medium blue-gray */
 
-    --accent: 210 6% 81%; /* #CED4DA */
-    --accent-foreground: 210 6% 16%; /* #212529 */
+    --accent: 213 94% 68%; /* Light blue #60a5fa */
+    --accent-foreground: 210 40% 8%; /* Dark blue-gray */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 6% 81%; /* #CED4DA */
-    --input: 210 6% 81%; /* #CED4DA */
-    --ring: 210 6% 33%; /* #495057 */
+    --border: 214 32% 91%; /* Light blue-gray */
+    --input: 214 32% 91%; /* Light blue-gray */
+    --ring: 217 91% 60%; /* Bright blue */
 
     --radius: 0.5rem;
 
-    /* Custom Gray Theme Colors */
-    --gray-lightest: 0 0% 98%; /* #F8F9FA */
-    --gray-lighter: 210 9% 91%; /* #E9ECEF */
-    --gray-light: 210 6% 88%; /* #DEE2E6 */
-    --gray-medium-light: 210 6% 81%; /* #CED4DA */
-    --gray-medium: 213 5% 68%; /* #ADB5BD */
-    --gray-medium-dark: 210 4% 42%; /* #6C757D */
-    --gray-dark: 210 6% 33%; /* #495057 */
-    --gray-darker: 210 6% 25%; /* #343A40 */
-    --gray-darkest: 210 6% 16%; /* #212529 */
+    /* Blue Tech Theme Colors */
+    --blue-lightest: 213 100% 97%; /* Very light blue */
+    --blue-lighter: 214 95% 93%; /* Light blue */
+    --blue-light: 213 94% 68%; /* Light blue #60a5fa */
+    --blue-medium: 217 91% 60%; /* Medium blue #3b82f6 */
+    --blue-dark: 224 76% 48%; /* Dark blue #1d4ed8 */
+    --blue-darker: 226 71% 40%; /* Darker blue #1e40af */
+    --blue-darkest: 224 64% 33%; /* Very dark blue #1e3a8a */
   }
 
   .dark {
-    /* Gray Color Palette - Dark Mode */
-    --background: 210 6% 16%; /* #212529 */
-    --foreground: 0 0% 98%; /* #F8F9FA */
+    /* Blue Tech Theme - Dark Mode */
+    --background: 224 71% 4%; /* Very dark blue */
+    --foreground: 213 100% 97%; /* Very light blue */
 
-    --card: 210 6% 25%; /* #343A40 */
-    --card-foreground: 0 0% 98%; /* #F8F9FA */
+    --card: 224 71% 8%; /* Dark blue */
+    --card-foreground: 213 100% 97%; /* Very light blue */
 
-    --popover: 210 6% 25%; /* #343A40 */
-    --popover-foreground: 0 0% 98%; /* #F8F9FA */
+    --popover: 224 71% 8%; /* Dark blue */
+    --popover-foreground: 213 100% 97%; /* Very light blue */
 
-    --primary: 210 4% 42%; /* #6C757D */
-    --primary-foreground: 0 0% 98%; /* #F8F9FA */
+    --primary: 217 91% 60%; /* Bright blue #3b82f6 */
+    --primary-foreground: 224 71% 4%; /* Very dark blue */
 
-    --secondary: 210 6% 33%; /* #495057 */
-    --secondary-foreground: 0 0% 98%; /* #F8F9FA */
+    --secondary: 224 64% 20%; /* Dark blue-gray */
+    --secondary-foreground: 213 100% 97%; /* Very light blue */
 
-    --muted: 210 6% 33%; /* #495057 */
-    --muted-foreground: 213 5% 68%; /* #ADB5BD */
+    --muted: 224 64% 20%; /* Dark blue-gray */
+    --muted-foreground: 214 95% 80%; /* Light blue */
 
-    --accent: 210 6% 81%; /* #CED4DA */
-    --accent-foreground: 210 6% 16%; /* #212529 */
+    --accent: 213 94% 68%; /* Light blue #60a5fa */
+    --accent-foreground: 224 71% 4%; /* Very dark blue */
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 213 100% 97%;
 
-    --border: 210 6% 33%; /* #495057 */
-    --input: 210 6% 33%; /* #495057 */
-    --ring: 210 4% 42%; /* #6C757D */
+    --border: 224 64% 20%; /* Dark blue-gray */
+    --input: 224 64% 20%; /* Dark blue-gray */
+    --ring: 217 91% 60%; /* Bright blue */
 
-    /* Dark mode Gray Theme Colors (inverted) */
-    --gray-lightest: 210 6% 16%; /* #212529 */
-    --gray-lighter: 210 6% 25%; /* #343A40 */
-    --gray-light: 210 6% 33%; /* #495057 */
-    --gray-medium-light: 210 4% 42%; /* #6C757D */
-    --gray-medium: 213 5% 68%; /* #ADB5BD */
-    --gray-medium-dark: 210 6% 81%; /* #CED4DA */
-    --gray-dark: 210 6% 88%; /* #DEE2E6 */
-    --gray-darker: 210 9% 91%; /* #E9ECEF */
-    --gray-darkest: 0 0% 98%; /* #F8F9FA */
+    /* Dark mode Blue Tech Theme Colors */
+    --blue-lightest: 224 71% 4%; /* Very dark blue */
+    --blue-lighter: 224 71% 8%; /* Dark blue */
+    --blue-light: 224 64% 20%; /* Dark blue-gray */
+    --blue-medium: 217 91% 60%; /* Medium blue #3b82f6 */
+    --blue-dark: 213 94% 68%; /* Light blue #60a5fa */
+    --blue-darker: 214 95% 80%; /* Lighter blue */
+    --blue-darkest: 213 100% 97%; /* Very light blue */
   }
 }
 
@@ -141,53 +137,53 @@
     animation: gentle-pulse 3s ease-in-out infinite;
   }
 
-  /* Gray Theme Utilities */
+  /* Blue Tech Theme Utilities */
   .ai-gradient-primary {
-    @apply bg-gradient-to-r from-gray-600 to-gray-800;
+    @apply bg-gradient-to-r from-blue-500 to-blue-700;
   }
 
   .ai-gradient-secondary {
-    @apply bg-gradient-to-r from-gray-500 to-gray-700;
+    @apply bg-gradient-to-r from-blue-400 to-blue-600;
   }
 
   .ai-gradient-neural {
-    @apply bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500;
+    @apply bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400;
   }
 
   .ai-text-gradient {
-    @apply bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent;
   }
 
   .ai-button-primary {
-    @apply bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white shadow-lg hover:shadow-xl hover:shadow-gray-500/25 transition-all duration-300;
+    @apply bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300;
   }
 
   .ai-button-secondary {
-    @apply border-2 border-gray-500 text-gray-600 dark:text-gray-400 hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-800 hover:text-white hover:border-transparent transition-all duration-300;
+    @apply border-2 border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:text-white hover:border-transparent transition-all duration-300;
   }
 
   .ai-button-neural {
-    @apply bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white shadow-lg hover:shadow-xl hover:shadow-gray-500/25 transition-all duration-300;
+    @apply bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300;
   }
 
   .ai-card {
-    @apply bg-gradient-to-br from-gray-50/10 to-gray-100/10 dark:from-gray-900/20 dark:to-gray-800/20 border border-gray-200/50 dark:border-gray-700/50;
+    @apply bg-gradient-to-br from-blue-50/10 to-blue-100/10 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200/50 dark:border-blue-700/50;
   }
 
   .ai-badge {
-    @apply bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800/30 dark:to-gray-700/30 text-gray-800 dark:text-gray-300 border border-gray-200/50 dark:border-gray-700/50;
+    @apply bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-800/30 dark:to-blue-700/30 text-blue-800 dark:text-blue-300 border border-blue-200/50 dark:border-blue-700/50;
   }
 
   .ai-hover-effect {
-    @apply hover:scale-105 hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300;
+    @apply hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300;
   }
 
   .ai-glow {
-    @apply shadow-lg shadow-gray-500/20 hover:shadow-xl hover:shadow-gray-500/30 transition-all duration-300;
+    @apply shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300;
   }
 
   .ai-neural-glow {
-    @apply shadow-lg shadow-gray-400/20 hover:shadow-xl hover:shadow-gray-400/30 transition-all duration-300;
+    @apply shadow-lg shadow-blue-400/20 hover:shadow-xl hover:shadow-blue-400/30 transition-all duration-300;
   }
 
   .ai-code-block {
