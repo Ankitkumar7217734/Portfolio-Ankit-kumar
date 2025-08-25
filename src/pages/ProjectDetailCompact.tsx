@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useParams } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Code, Globe, ArrowLeft, ExternalLink, Github, Star, Calendar, Users, Zap, Eye, Clock, Target, Layers } from "lucide-react";
+import { Code, Globe, ArrowLeft, ExternalLink, Github, Star, Calendar, Users, Zap, Eye, Clock, Target, Layers, CircuitBoard, Battery, Cpu } from "lucide-react";
 import { projectsData } from "./Projects";
 
 const ProjectDetail = () => {
@@ -13,24 +13,26 @@ const ProjectDetail = () => {
   
   if (!project) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50 dark:from-blue-950/20 dark:via-purple-950/10 dark:to-pink-950/20 relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50/50 via-yellow-50/30 to-blue-50/50 dark:from-emerald-950/20 dark:via-yellow-950/10 dark:to-blue-950/20 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-400/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse electrical-component"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-blue-400/20 to-emerald-400/20 rounded-full blur-3xl animate-pulse delay-1000 electrical-component"></div>
+          <div className="absolute top-20 left-20 w-32 h-1 bg-gradient-to-r from-emerald-500/30 to-transparent circuit-trace"></div>
+          <div className="absolute bottom-32 right-24 w-24 h-1 bg-gradient-to-l from-yellow-500/30 to-transparent circuit-trace" style={{animationDelay: '1s'}}></div>
         </div>
         
         <div className="relative max-w-4xl mx-auto px-4 py-16">
-          <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-xl p-6 lg:p-8 border border-white/30 dark:border-gray-700/30 shadow-lg text-center">
+          <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-xl p-6 lg:p-8 border border-white/30 dark:border-gray-700/30 shadow-lg text-center electrical-component">
             <div className="mb-6 animate-fade-in">
-              <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Star className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg electrical-component">
+                <CircuitBoard className="h-8 w-8 text-white" />
               </div>
               <h1 className="text-3xl font-serif font-bold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent mb-3">
                 Project Not Found
               </h1>
               <p className="text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-                Sorry, the project you're looking for doesn't exist.
+                Sorry, the engineering project you're looking for doesn't exist.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -54,27 +56,33 @@ const ProjectDetail = () => {
   }
 
   // Function to get project-specific features
-  const getProjectFeatures = (project: any) => {
+  const getProjectFeatures = (project: typeof projectsData[0]) => {
     const features = [];
     
-    if (project.tags.includes("React") || project.tags.includes("Vue.js")) {
-      features.push({ icon: "⚛️", text: "Component-Based" });
+    if (project.tags.includes("Power Systems") || project.tags.includes("IoT")) {
+      features.push({ icon: "⚡", text: "Power Control" });
     }
-    if (project.tags.includes("Responsive Design") || project.tags.includes("Tailwind CSS")) {
-      features.push({ icon: "📱", text: "Responsive" });
+    if (project.tags.includes("Embedded Systems") || project.tags.includes("Microcontrollers")) {
+      features.push({ icon: "�", text: "Embedded" });
     }
-    if (project.tags.includes("TypeScript")) {
-      features.push({ icon: "🔒", text: "Type-Safe" });
+    if (project.tags.includes("MATLAB") || project.tags.includes("SPICE")) {
+      features.push({ icon: "�", text: "Simulation" });
     }
-    if (project.tags.includes("API") || project.tags.includes("Firebase")) {
-      features.push({ icon: "🔗", text: "API Integration" });
+    if (project.tags.includes("PLC") || project.tags.includes("Industrial Automation")) {
+      features.push({ icon: "🏭", text: "Automation" });
+    }
+    if (project.tags.includes("Signal Processing")) {
+      features.push({ icon: "�", text: "DSP" });
+    }
+    if (project.tags.includes("Motor Control")) {
+      features.push({ icon: "⚙️", text: "Motor Control" });
     }
     
     // Default features if none match
     if (features.length === 0) {
       features.push(
-        { icon: "✨", text: "Modern Design" },
-        { icon: "⚡", text: "Fast Performance" }
+        { icon: "🔧", text: "Engineering Design" },
+        { icon: "⚡", text: "High Performance" }
       );
     }
     
@@ -84,11 +92,13 @@ const ProjectDetail = () => {
   const projectFeatures = getProjectFeatures(project);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50 dark:from-blue-950/20 dark:via-purple-950/10 dark:to-pink-950/20 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50/50 via-yellow-50/30 to-blue-50/50 dark:from-emerald-950/20 dark:via-yellow-950/10 dark:to-blue-950/20 relative overflow-hidden">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-32 -right-32 w-64 h-64 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-gradient-to-tr from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-32 -right-32 w-64 h-64 bg-gradient-to-br from-emerald-400/10 to-yellow-400/10 rounded-full blur-3xl electrical-component"></div>
+        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-gradient-to-tr from-blue-400/10 to-emerald-400/10 rounded-full blur-3xl electrical-component"></div>
+        <div className="absolute top-16 left-16 w-40 h-1 bg-gradient-to-r from-emerald-500/20 to-transparent circuit-trace"></div>
+        <div className="absolute bottom-20 right-20 w-32 h-1 bg-gradient-to-l from-yellow-500/20 to-transparent circuit-trace" style={{animationDelay: '1s'}}></div>
       </div>
       
       <div className="relative max-w-5xl mx-auto px-4 py-6">

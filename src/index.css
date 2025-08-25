@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,65 +6,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Gray Color Palette - Light Mode */
+    --background: 0 0% 98%; /* #F8F9FA */
+    --foreground: 210 6% 16%; /* #212529 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 0 0% 98%; /* #F8F9FA */
+    --card-foreground: 210 6% 16%; /* #212529 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 0 0% 98%; /* #F8F9FA */
+    --popover-foreground: 210 6% 16%; /* #212529 */
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 210 6% 33%; /* #495057 */
+    --primary-foreground: 0 0% 98%; /* #F8F9FA */
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 210 6% 88%; /* #DEE2E6 */
+    --secondary-foreground: 210 6% 16%; /* #212529 */
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 210 9% 91%; /* #E9ECEF */
+    --muted-foreground: 210 4% 42%; /* #6C757D */
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 210 6% 81%; /* #CED4DA */
+    --accent-foreground: 210 6% 16%; /* #212529 */
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5% 64.9%;
+    --border: 210 6% 81%; /* #CED4DA */
+    --input: 210 6% 81%; /* #CED4DA */
+    --ring: 210 6% 33%; /* #495057 */
 
     --radius: 0.5rem;
+
+    /* Custom Gray Theme Colors */
+    --gray-lightest: 0 0% 98%; /* #F8F9FA */
+    --gray-lighter: 210 9% 91%; /* #E9ECEF */
+    --gray-light: 210 6% 88%; /* #DEE2E6 */
+    --gray-medium-light: 210 6% 81%; /* #CED4DA */
+    --gray-medium: 213 5% 68%; /* #ADB5BD */
+    --gray-medium-dark: 210 4% 42%; /* #6C757D */
+    --gray-dark: 210 6% 33%; /* #495057 */
+    --gray-darker: 210 6% 25%; /* #343A40 */
+    --gray-darkest: 210 6% 16%; /* #212529 */
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Gray Color Palette - Dark Mode */
+    --background: 210 6% 16%; /* #212529 */
+    --foreground: 0 0% 98%; /* #F8F9FA */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 6% 25%; /* #343A40 */
+    --card-foreground: 0 0% 98%; /* #F8F9FA */
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 6% 25%; /* #343A40 */
+    --popover-foreground: 0 0% 98%; /* #F8F9FA */
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 210 4% 42%; /* #6C757D */
+    --primary-foreground: 0 0% 98%; /* #F8F9FA */
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 6% 33%; /* #495057 */
+    --secondary-foreground: 0 0% 98%; /* #F8F9FA */
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 210 6% 33%; /* #495057 */
+    --muted-foreground: 213 5% 68%; /* #ADB5BD */
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 6% 81%; /* #CED4DA */
+    --accent-foreground: 210 6% 16%; /* #212529 */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 210 6% 33%; /* #495057 */
+    --input: 210 6% 33%; /* #495057 */
+    --ring: 210 4% 42%; /* #6C757D */
+
+    /* Dark mode Gray Theme Colors (inverted) */
+    --gray-lightest: 210 6% 16%; /* #212529 */
+    --gray-lighter: 210 6% 25%; /* #343A40 */
+    --gray-light: 210 6% 33%; /* #495057 */
+    --gray-medium-light: 210 4% 42%; /* #6C757D */
+    --gray-medium: 213 5% 68%; /* #ADB5BD */
+    --gray-medium-dark: 210 6% 81%; /* #CED4DA */
+    --gray-dark: 210 6% 88%; /* #DEE2E6 */
+    --gray-darker: 210 9% 91%; /* #E9ECEF */
+    --gray-darkest: 0 0% 98%; /* #F8F9FA */
   }
 }
 
@@ -72,12 +96,12 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -87,33 +111,87 @@
   .page-section {
     @apply opacity-0;
   }
-  
+
   .page-section.active {
     @apply animate-fade-in;
   }
-  
+
   .nav-link {
     @apply relative inline-block py-2 px-1 text-muted-foreground hover:text-foreground transition-colors;
   }
-  
+
   .nav-link::after {
     @apply content-[''] absolute w-0 h-0.5 bg-primary bottom-0 left-0 transition-all duration-300;
   }
-  
-  .nav-link:hover::after, .nav-link.active::after {
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
     @apply w-full;
   }
-  
+
   .project-card {
     @apply transition-all duration-400 hover:-translate-y-1 hover:shadow-md;
   }
-  
+
   .blog-card {
     @apply transition-all duration-400 hover:-translate-y-1 hover:shadow-md;
   }
-  
+
   .animate-gentle-pulse {
     animation: gentle-pulse 3s ease-in-out infinite;
+  }
+
+  /* Gray Theme Utilities */
+  .ai-gradient-primary {
+    @apply bg-gradient-to-r from-gray-600 to-gray-800;
+  }
+
+  .ai-gradient-secondary {
+    @apply bg-gradient-to-r from-gray-500 to-gray-700;
+  }
+
+  .ai-gradient-neural {
+    @apply bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500;
+  }
+
+  .ai-text-gradient {
+    @apply bg-gradient-to-r from-gray-700 via-gray-600 to-gray-500 bg-clip-text text-transparent;
+  }
+
+  .ai-button-primary {
+    @apply bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white shadow-lg hover:shadow-xl hover:shadow-gray-500/25 transition-all duration-300;
+  }
+
+  .ai-button-secondary {
+    @apply border-2 border-gray-500 text-gray-600 dark:text-gray-400 hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-800 hover:text-white hover:border-transparent transition-all duration-300;
+  }
+
+  .ai-button-neural {
+    @apply bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white shadow-lg hover:shadow-xl hover:shadow-gray-500/25 transition-all duration-300;
+  }
+
+  .ai-card {
+    @apply bg-gradient-to-br from-gray-50/10 to-gray-100/10 dark:from-gray-900/20 dark:to-gray-800/20 border border-gray-200/50 dark:border-gray-700/50;
+  }
+
+  .ai-badge {
+    @apply bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800/30 dark:to-gray-700/30 text-gray-800 dark:text-gray-300 border border-gray-200/50 dark:border-gray-700/50;
+  }
+
+  .ai-hover-effect {
+    @apply hover:scale-105 hover:shadow-lg hover:shadow-gray-500/20 transition-all duration-300;
+  }
+
+  .ai-glow {
+    @apply shadow-lg shadow-gray-500/20 hover:shadow-xl hover:shadow-gray-500/30 transition-all duration-300;
+  }
+
+  .ai-neural-glow {
+    @apply shadow-lg shadow-gray-400/20 hover:shadow-xl hover:shadow-gray-400/30 transition-all duration-300;
+  }
+
+  .ai-code-block {
+    @apply bg-gradient-to-br from-slate-900 to-blue-900 text-cyan-400 border border-blue-500/30;
   }
 }
 
@@ -144,7 +222,8 @@
 }
 
 @keyframes gentle-pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.7;
   }
@@ -174,7 +253,7 @@
 }
 
 .project-card-enhanced::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-pink-500/10 opacity-0 transition-all duration-500 rounded-xl;
   pointer-events: none;
   z-index: 1;
@@ -187,7 +266,8 @@
 .project-card-enhanced:hover {
   transform: translateY(-8px) scale(1.02);
   border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project-image-container {
@@ -196,7 +276,7 @@
 }
 
 .project-image-container::after {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 transition-opacity duration-300;
   pointer-events: none;
   z-index: 2;
@@ -231,7 +311,7 @@
 }
 
 .tag-enhanced::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 transition-opacity duration-300;
   pointer-events: none;
 }
@@ -245,7 +325,7 @@
 }
 
 .featured-section-badge::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-0 transition-opacity duration-300;
   pointer-events: none;
 }
@@ -265,7 +345,7 @@
 }
 
 .project-button-enhanced::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 transition-opacity duration-300;
   pointer-events: none;
 }
@@ -356,7 +436,7 @@
 }
 
 .project-info-card::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 transition-opacity duration-500 rounded-xl;
   pointer-events: none;
 }
@@ -370,7 +450,7 @@
 }
 
 .project-action-button::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 transition-opacity duration-300;
   pointer-events: none;
 }
@@ -400,7 +480,7 @@
 }
 
 .project-highlight-card::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 transition-opacity duration-500 rounded-xl;
   pointer-events: none;
 }
@@ -427,7 +507,7 @@
     animation: slideInFromTop 0.8s ease-out forwards;
     animation-delay: 100ms;
   }
-  
+
   .project-detail-sidebar {
     animation: slideInFromTop 0.8s ease-out forwards;
     animation-delay: 200ms;
@@ -458,7 +538,7 @@
 }
 
 .project-metric-badge::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 transition-opacity duration-300;
   pointer-events: none;
 }
@@ -512,9 +592,15 @@
   transform: translateY(20px);
 }
 
-.compact-info-card:nth-child(1) { animation-delay: 100ms; }
-.compact-info-card:nth-child(2) { animation-delay: 200ms; }
-.compact-info-card:nth-child(3) { animation-delay: 300ms; }
+.compact-info-card:nth-child(1) {
+  animation-delay: 100ms;
+}
+.compact-info-card:nth-child(2) {
+  animation-delay: 200ms;
+}
+.compact-info-card:nth-child(3) {
+  animation-delay: 300ms;
+}
 
 @keyframes slideInUp {
   from {
@@ -561,11 +647,11 @@
   .compact-project-layout {
     @apply px-3 py-4;
   }
-  
+
   .compact-info-card {
     @apply p-3;
   }
-  
+
   .compact-project-title {
     @apply text-xl;
   }
@@ -641,7 +727,7 @@
 }
 
 .project-card-compact::before {
-  content: '';
+  content: "";
   @apply absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 transition-all duration-300 rounded-lg;
   pointer-events: none;
   z-index: 1;
@@ -702,4 +788,227 @@
 /* Reduce animation delays for faster loading */
 .project-card-compact:nth-child(n) {
   animation-delay: calc(var(--index, 0) * 80ms);
+}
+
+/* Electrical Engineering Theme Animations */
+
+/* Current flow animation */
+@keyframes current-flow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes current-flow-vertical {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Electric spark animation */
+@keyframes electric-spark {
+  0% {
+    box-shadow: 0 0 5px #facc15;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px #facc15, 0 0 30px #fde047;
+    transform: scale(1.2);
+  }
+  100% {
+    box-shadow: 0 0 5px #facc15;
+    transform: scale(1);
+  }
+}
+
+/* Circuit board trace animation */
+@keyframes circuit-trace {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Voltage pulse animation */
+@keyframes voltage-pulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px currentColor;
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+/* Electrical grid animation */
+@keyframes electrical-grid {
+  0% {
+    opacity: 0.2;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: rotate(1deg);
+  }
+  100% {
+    opacity: 0.2;
+    transform: rotate(0deg);
+  }
+}
+
+/* Power indicator animation */
+@keyframes power-indicator {
+  0% {
+    background: #ef4444;
+    box-shadow: 0 0 10px #ef4444;
+  }
+  50% {
+    background: #eab308;
+    box-shadow: 0 0 15px #eab308;
+  }
+  100% {
+    background: #10b981;
+    box-shadow: 0 0 20px #10b981;
+  }
+}
+
+/* Utility classes for electrical theme */
+.animate-current-flow {
+  animation: current-flow 3s ease-in-out infinite;
+}
+
+.animate-current-flow-vertical {
+  animation: current-flow-vertical 3s ease-in-out infinite;
+}
+
+.animate-electric-spark {
+  animation: electric-spark 2s ease-in-out infinite;
+}
+
+.animate-circuit-trace {
+  animation: circuit-trace 2s linear infinite;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #10b981 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+.animate-voltage-pulse {
+  animation: voltage-pulse 2s ease-in-out infinite;
+}
+
+.animate-electrical-grid {
+  animation: electrical-grid 4s ease-in-out infinite;
+}
+
+.animate-power-indicator {
+  animation: power-indicator 3s ease-in-out infinite;
+}
+
+/* Enhanced electrical engineering styles */
+.electrical-wire {
+  position: relative;
+  overflow: hidden;
+}
+
+.electrical-wire::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #facc15, transparent);
+  animation: current-flow 2s linear infinite;
+}
+
+.electrical-component {
+  border: 2px solid #10b981;
+  position: relative;
+  overflow: hidden;
+}
+
+.electrical-component::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -100%;
+  width: 100%;
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(16, 185, 129, 0.2),
+    transparent
+  );
+  animation: circuit-trace 1.5s linear infinite;
+}
+
+/* Enhanced project cards with electrical theme */
+@layer components {
+  .project-card-electrical {
+    @apply relative overflow-hidden border border-emerald-500/20 bg-gradient-to-br from-emerald-50/10 to-yellow-50/10 dark:from-emerald-950/20 dark:to-yellow-950/20;
+    transition: all 0.3s ease;
+  }
+
+  .project-card-electrical:hover {
+    @apply border-emerald-500/40 shadow-lg;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+  }
+}
+
+.project-card-electrical::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #facc15, transparent);
+  animation: circuit-trace 3s linear infinite;
+}
+
+.project-card-electrical::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #10b981, transparent);
+  animation: circuit-trace 3s linear infinite reverse;
+  animation-delay: 1.5s;
 }
